@@ -9,6 +9,34 @@ public class Student{
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
+
+    @OneToOne(
+            // 'bio' refers to the field in StudentProfile class
+            mappedBy = "student",
+            cascade = {CascadeType.PERSIST, CascadeType.REMOVE}
+    )
+    private StudentProfile studentProfile;
+
+    public StudentProfile getStudentProfile() {
+        return studentProfile;
+    }
+
+    public void setStudentProfile(StudentProfile studentProfile) {
+        this.studentProfile = studentProfile;
+    }
+
+    public School getSchool() {
+        return school;
+    }
+
+    public void setSchool(School school) {
+        this.school = school;
+    }
+
+    @ManyToOne // this side is owner
+    @JoinColumn(name = "school_id")
+    private School school;
+
     private String firstname;
     private String lastname;
 
