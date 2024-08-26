@@ -1,4 +1,4 @@
-package com.sekiro.example.student;
+package com.sekiro.example.model.student;
 
 import jakarta.persistence.*;
 

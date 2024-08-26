@@ -1,0 +1,19 @@
+com
+|
+|_____ myapp
+        |
+        |_____ usercomponent
+        |       |
+        |       |____ controllers
+        |       |
+        |       |____ services
+        |
+        |_____ productcomponent
+        |       |
+        |       |____ controllers
+        |       |
+        |       |____ services
+        |
+        |_____ scheduling
+        |
+        |_____ medicalRecords

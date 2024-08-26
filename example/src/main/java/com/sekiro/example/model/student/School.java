@@ -1,5 +1,6 @@
-package com.sekiro.example.student;
+package com.sekiro.example.model.student;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 
 import java.util.ArrayList;
@@ -28,6 +29,7 @@ public class School {
     @OneToMany(
             mappedBy = "school"
     )
+    @JsonManagedReference() // the parent is in charge serialize the child
     private List<Student> studentList = new ArrayList<>();
 
     @Override

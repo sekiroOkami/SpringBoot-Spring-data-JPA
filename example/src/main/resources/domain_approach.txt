@@ -1,0 +1,11 @@
+com
+|
+|_____ myapp
+        |
+        |_____ patientManagement
+        |
+        |_____ billing
+        |
+        |_____ scheduling
+        |
+        |_____ medicalRecords

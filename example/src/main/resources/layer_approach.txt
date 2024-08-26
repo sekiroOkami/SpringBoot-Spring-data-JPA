@@ -1,0 +1,16 @@
+com
+|
+|_____ myapp
+        |
+        |_____ controllers
+        |
+        |_____ services
+        |
+        |_____ repositories
+        |
+        |_____ models
+        |
+        |_____ utils
+
+
+cons: change the feature can affect the all package

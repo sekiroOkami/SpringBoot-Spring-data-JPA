@@ -11,7 +11,7 @@ spring:
 
   jpa:
     hibernate:
-      ddl-auto: create-drop #controls the behavior of the database schema generation.
+      ddl-auto: update #controls the behavior of the database schema generation.
     show-sql: true
     properties:
       hibernate:

@@ -1,5 +1,6 @@
-package com.sekiro.example.student;
+package com.sekiro.example.model.student;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 
 @Entity
@@ -17,6 +18,11 @@ public class Student{
     )
     private StudentProfile studentProfile;
 
+    @ManyToOne // this side is owner
+    @JoinColumn(name = "school_id")
+    @JsonBackReference // this does need to serialize the parent
+    private School school;
+
     public StudentProfile getStudentProfile() {
         return studentProfile;
     }
@@ -33,9 +39,7 @@ public class Student{
         this.school = school;
     }
 
-    @ManyToOne // this side is owner
-    @JoinColumn(name = "school_id")
-    private School school;
+
 
     private String firstname;
     private String lastname;

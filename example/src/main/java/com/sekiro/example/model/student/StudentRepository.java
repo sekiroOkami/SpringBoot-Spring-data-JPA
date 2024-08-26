@@ -1,4 +1,4 @@
-package com.sekiro.example.student;
+package com.sekiro.example.model.student;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.*;

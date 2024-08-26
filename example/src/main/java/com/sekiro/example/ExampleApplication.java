@@ -1,12 +1,10 @@
 package com.sekiro.example;
 
 
-import com.sekiro.example.config.AppConfig;
-import com.sekiro.example.service.MyFirstService;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import java.util.Arrays;
 
