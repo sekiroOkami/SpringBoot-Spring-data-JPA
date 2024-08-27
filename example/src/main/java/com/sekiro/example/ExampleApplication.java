@@ -12,7 +12,5 @@ import java.util.Arrays;
 public class ExampleApplication {
 	public static void main(String[] args) {
 		ConfigurableApplicationContext context = SpringApplication.run(ExampleApplication.class, args);
-//		var context = new AnnotationConfigApplicationContext(AppConfig.class);
-//		Arrays.stream(context.getBeanDefinitionNames()).sorted().forEach(System.out::println);
 	}
 }
